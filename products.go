@@ -63,11 +63,11 @@ type Product struct {
   MenuOrder              int                  `json:"menu_order,omitempty"`
   Variations             *[]int               `json:"variations,omitempty"`
   GroupedProducts        *[]int               `json:"grouped_products,omitempty"`
-  MetaData               *[]int               `json:"meta_data,omitempty"`
+  MetaData               *[]MetaData          `json:"meta_data,omitempty"`
   RelatedIds             *[]int               `json:"related_ids,omitempty"`
   CrossSellIds           *[]int               `json:"cross_sell_ids,omitempty"`
   UpsellIds              *[]int               `json:"upsell_ids,omitempty"`
-  Images                 *Image               `json:"images,omitempty"`
+  Images                 *[]Image             `json:"images,omitempty"`
   Dimensions             *ProductDimensions   `json:"dimensions,omitempty"`
   Downloads              *[]ProductDownloads  `json:"downloads,omitempty"`
   Categories             *[]ProductCategory   `json:"categories,omitempty"`
